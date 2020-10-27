@@ -1,6 +1,6 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
+author: "Karen Hernandez"
 date: "Fall 2020"
 output: html_document
 ---
@@ -23,6 +23,22 @@ plot(LENGTH~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+
+
+```{r}
+HEADLEN <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(HEADLEN)
+summary.lm(HEADLEN)
+```
+
+```{r}
+chest <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(chest)
+summary.lm(chest)
+```
+
 
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
