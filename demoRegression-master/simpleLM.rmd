@@ -39,6 +39,7 @@ abline(chest)
 summary.lm(chest)
 ```
 
+We can see the linear models that headlen is a much better model because the adjusted r - squared 0.8434 which is bigger than the neck adjusted r squared 0.7476
 
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
