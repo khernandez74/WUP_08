@@ -56,5 +56,11 @@ pairs (bears)
 ```
 
 
+```{r}
+fix<- lm (LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(fix)
+summary.lm(fix)
+```
 
 
