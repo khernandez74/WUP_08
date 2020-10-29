@@ -24,6 +24,13 @@ abline(simp)
 summary.lm(simp)
 ```
 
+```{r}
+chest <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(chest)
+summary.lm(chest)
+```
+According to the plot, we can see that LENGHT and CHEST the R- squared is 0.7869, just slightly bigger than LENGHT and NECK. 
 
 ```{r}
 HEADLEN <- lm(LENGTH~HEADLEN,data=bears)
@@ -32,12 +39,6 @@ abline(HEADLEN)
 summary.lm(HEADLEN)
 ```
 
-```{r}
-chest <- lm(LENGTH~CHEST,data=bears)
-plot(LENGTH~CHEST,data=bears)
-abline(chest)
-summary.lm(chest)
-```
 
 We can see the linear models that headlen is a much better model because the adjusted r - squared 0.8434 which is bigger than the neck adjusted r squared 0.7476
 
