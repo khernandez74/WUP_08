@@ -55,12 +55,4 @@ predict(simp,new,se.fit=TRUE)
 pairs (bears)
 ```
 
-
-```{r}
-fix<- lm (LENGTH~HEADLEN,data=bears)
-plot(LENGTH~HEADLEN,data=bears)
-abline(fix)
-summary.lm(fix)
-```
-
-
+A better approach as opposed to LENGTH and NECK is to use LENGH and HEADLEN because it has a larger adjusted R squared. The R squared value for LENGTH and NECK was 0.7476, the adjusted R squared value for LENGTH and HEADLEN was 0.8434.
